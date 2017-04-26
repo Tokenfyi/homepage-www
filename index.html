@@ -1,135 +1,109 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<html>
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TokenFYI™ -- Explore Blochchain Tokens on Facebook Messenger</title>
 
-    <title>TokenFYI™ - Lightweight Ethereum Token Chat Bot via Facebook Messenger | Token.fyi</title>
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <!-- <meta property="og:url" content="https://gendereq.com">
+    <meta property="og:image" content="http://gendereq.com/img/poster.png">
+    <meta property="og:image:secure_url" content="https://gendereq.com/img/poster.png"> -->
+    <meta property="og:image:width" content="750">
+    <meta property="og:image:height" content="1334">
+    <meta property="og:description" content="TokenFYI™ is a lightweight Facebook Messenger Bot allows users to get information about any token on the go!">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="equalizer-path">
+      <svg width="2718" height="325" viewBox="0 0 2718 325" xmlns="http://www.w3.org/2000/svg"><g stroke="#101094" stroke-width="6" fill="none" fill-rule="evenodd" opacity=".639"><path d="M-12 28.645s31.257-41.82 69.367-14.48c26.391 18.93 51.34 109.868 90.946 110.835 57.132 1.395 33.613-121.531 139.75-121.531 103.07 0 140.804 318.906 222.828 318.906 115.437 0 49.554-235.156 129.992-248.438 60.372-9.968 80.362 92.154 130.039 74.766C838.64 125 874.676 87.22 959.687 87.22c89.981 0 170.118 177.039 245.704 177.039 75.586 0 62.437-115.555 120.632-115.555 61.399 0 25.922 136.719 93.43 136.719 67.508 0 81.194-160.422 81.194-160.422M1500.695 125s.14-121.531 65.54-121.531c65.398 0 82.473 120.564 122.078 121.531 57.132 1.395 33.58-121.531 139.75-121.531 115.687 0 140.804 318.906 222.828 318.906 115.437 0 55.773-249.07 140.78-249.07 47.517 0 65.38 75.398 119.25 75.398 76.67 0 124.255-63.676 209.267-63.676 89.98 0 149.617 179.23 225.203 179.23 75.586 0 62.437-115.554 120.632-115.554 61.399 0 25.922 136.719 93.43 136.719 67.508 0 52.54-36.102 52.54-36.102"/></g></svg>
+    </div>
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <main class="grid__container">
+      <div class="grid__left">
+        <div class="grid__left-top">
+          <img src="img/token.png" width="50%" style = "margin-top:50px;">
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+          <p class="grid__paragraph grid__paragraph--top">
+            <u>TokenFYI™</u> is a lightweight Facebook Messenger Bot allows users to get information about any token on the go!
+          </p>
 
-    <!-- Theme CSS -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+          <div class="read-more">
+            <span class="js-read-more read-more__inner">Read more</span>
+          </div>
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
 
-</head>
+          <p class="grid__paragraph grid__paragraph--hide-small">
+            Use the chat app to track the real time price of your favorite crypto tokens! Such as Ethereum, Augur, FirstBlood, Golem...<br>
+          </p>
 
-<body id="page-top">
+          <div id="wrap">
+            <div style = "font-weight:300;font-size:20px;text-decoration:underline">Commands:</div></br>
+            <span>You:~$ hello, show me the ethereum price </span></br>
+            <span>You:~$ hello, what do you know about prediciton? </span></br>
+            <span>You:~$ /help </span>
+          </div>
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Token.Fyi</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#download">Download</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#features">Features</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+          <a class="button" href="https://goo.gl/9KWqHj">
+            Launch Now
+          </a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
+      </div>
 
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>Take Your Favorite Ethereum Token with You and Check Them in Real-Time!</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Start in 1 second</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup iphone6_plus portrait white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/tokenfyi.gif" width="100%" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="grid__right">
+        <div class="video">
+          <img src="img/iphone-7.png">
+          <div class="video__wrapper">
+            <video autoplay loop muted playsinline>
+              <source src="img/demo2.mp4" type="video/mp4">
+            </video>
+            <!-- <img class="video__poster" src="img/poster.png"> -->
+          </div>
         </div>
-    </header>
+      </div>
+    </main>
 
+    <!-- <div class="grid__container grid__container--data">
+      <p class="js-data grid__paragraph grid__paragraph--data">
+        So far we have analyzed <span class="js-totalduration">0</span> seconds
+        of speech in <span class="js-totalmeetings">0</span> meetings with
+        <span class="js-totalratio-female">0</span> female and
+        <span class="js-totalratio-male">0</span> male voices.
+      </p>
+    </div> -->
 
-
-
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
-            <ul class="list-inline">
-                <li>
-                    <a href="#">Privacy</a>
-                </li>
-                <li>
-                    <a href="#">Terms</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>
-        </div>
+    <footer class="footer">
+      <ul class="footer__list">
+        <li class="footer__link">
+          <a class="footer__link" href="http://token.fyi">
+            Token.Fyi™ human@token.fyi
+          </a>
+        </li>
+        <li>
+          <a class="footer__link" href="legal/tokenfyi_privacy_policy.pdf" download>User Agreement</a>
+        </li>
+        <li>
+          <a class="footer__link" href="legal/tokenfyi_privacy_policy.pdf" download>Privacy Policy</a>
+        </li>
+      </ul>
     </footer>
 
-    <!-- jQuery -->
-    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script src="js/main.js?cache=1489497276276"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
-
-</body>
-
+      ga('create', 'UA-29061031-6', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
 </html>
